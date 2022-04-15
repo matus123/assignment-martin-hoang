@@ -55,6 +55,12 @@ Next step is to migrate and seed the database with:
 
 > npx prisma migrate dev
 
+To run application, firstly you need to build typescript and then run start:
+
+> npm run build
+
+> npm start
+
 # Usage of application
 
 As I do not have much experience with FE GUI's, I decided to use for GUI built in Graphql Studio
