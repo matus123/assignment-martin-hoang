@@ -1,0 +1,38 @@
+{
+  "name": "assetario",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "scripts": {
+    "build": "npm run clear && tsc",
+    "clear": "shx rm -rf ./out ./dist",
+    "start": "node ./dist/app.js"
+  },
+  "keywords": [],
+  "author": "Martin Hoang @hoanghog",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-tools/utils": "^8.6.5",
+    "@paljs/plugins": "^4.0.18",
+    "@prisma/client": "^3.12.0",
+    "apollo-server-express": "^3.6.7",
+    "app-root-path": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fast-csv": "^4.3.6",
+    "graphql": "^16.3.0",
+    "graphql-modules": "^1.2.1",
+    "graphql-scalars": "^1.17.0",
+    "graphql-type-json": "^0.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.24",
+    "prisma": "^3.11.1",
+    "shx": "^0.3.4",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}
